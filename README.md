@@ -14,10 +14,13 @@ Code and data supporting the revised manuscript. Built in October 2026 for the r
   - `pipeline_v2.py`, `keywords_v2.json`: refined detection, keywords selected on the 75 development policies.
   - `common.py`: data loading, ground truth (category present in a segment when at least 2 of 3 annotators assign it),
     fixed development/test split (seed 2026), evaluation.
-  - `kwstats.py`, `select.py`: keyword selection on the development set only.
+  - `kwstats.py`, `select_keywords.py`: keyword selection on the development set only.
   - `evaluate.py`: baseline evaluation on all 115 policies.
   - `coverage.py`: per-policy category coverage in OPP-115.
   - `test_ids.txt`: the 40 held-out test policies. `test_results.txt`: output reported in Table 11.
+- `review/codebook.md`, `review/table6_evidence.csv`
+  Inclusion criteria and coding rules for the literature review, and the 13-study matrix (Table 6)
+  with the supporting location in each study for every mark.
 - `policies/GlucoseInsights_privacy_policy_reconstructed.md`
   Synthetic policy for the proof-of-concept application, reconstructed for the revision
   (the original synthetic text was not preserved), with its category labels.
@@ -36,7 +39,7 @@ unzip it, and point `OPP115_DIR` to the `OPP-115` folder.
     export OPP115_DIR=/path/to/OPP-115
     python coverage.py          # per-policy coverage
     python kwstats.py           # lemmatize development segments (cache)
-    python select.py            # select refined keywords on the development set
+    python select_keywords.py           # select refined keywords on the development set
     python -c "from common import *; import pipeline, pipeline_v2; d=load_all(); dev,test=split(d); evaluate(test,pipeline.detect); evaluate(test,pipeline_v2.detect)"
 
-Running `select.py` again regenerates `keywords_v2.json`; the version included is the one used for Table 11.
+Running `select_keywords.py` again regenerates `keywords_v2.json`; the version included is the one used for Table 11.
