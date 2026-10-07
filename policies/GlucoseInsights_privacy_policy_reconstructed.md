@@ -1,6 +1,5 @@
 # GlucoseInsights Privacy Policy (synthetic)
 
-> **Note for readers of this repository.** GlucoseInsights is the proof-of-concept application described in the paper. It is not a published application. This is a synthetic privacy policy written for it. The original synthetic text used in the first submission was not preserved; this version was reconstructed in October 2026 for the revised manuscript. It was written to contain the coverage gaps reported in the paper (no data retention, no owner access, no regulatory conformity) and is provided to illustrate how the framework reports such gaps.
 
 ---
 
