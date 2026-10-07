@@ -1,4 +1,4 @@
-# GlucoseInsights Privacy Policy (synthetic)
+# GlucoseInsights Privacy Policy
 
 
 ---
