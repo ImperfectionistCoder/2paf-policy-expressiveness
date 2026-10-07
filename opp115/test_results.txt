@@ -1,0 +1,31 @@
+=== v2 on DEV
+  Collection  P=0.509 R=0.805 F1=0.624 polAcc=1.000
+  Retention   P=0.568 R=0.689 F1=0.622 polAcc=0.840
+  Sharing     P=0.567 R=0.882 F1=0.690 polAcc=0.973
+  Access      P=0.626 R=0.679 F1=0.652 polAcc=0.867
+  Control     P=0.532 R=0.771 F1=0.630 polAcc=0.907
+  Security    P=0.527 R=0.815 F1=0.640 polAcc=0.960
+  Regulatory  P=0.880 R=0.908 F1=0.894 polAcc=1.000
+  micro      P=0.561 R=0.826 F1=0.668
+  scores MAE=0.052 r=0.879 sameBand=0.933 gold={'High': 64, 'Moderate': 8, 'Low': 3} pred={'Moderate': 9, 'High': 63, 'Low': 3}
+=== FINAL HELD-OUT TEST (40 policies), run once
+-- original method (Section 4.3 keywords)
+  Collection  P=0.398 R=0.686 F1=0.504 polAcc=0.975
+  Retention   P=0.019 R=0.941 F1=0.036 polAcc=0.325
+  Sharing     P=0.501 R=0.892 F1=0.642 polAcc=1.000
+  Access      P=0.195 R=0.930 F1=0.323 polAcc=0.775
+  Control     P=0.254 R=0.788 F1=0.384 polAcc=0.850
+  Security    P=0.329 R=0.906 F1=0.482 polAcc=0.975
+  Regulatory  P=0.453 R=0.928 F1=0.609 polAcc=0.925
+  micro      P=0.267 R=0.805 F1=0.401
+  scores MAE=0.153 r=0.903 sameBand=0.800 gold={'High': 32, 'Moderate': 4, 'Low': 4} pred={'High': 38, 'Moderate': 2}
+-- refined method (keywords selected on dev)
+  Collection  P=0.475 R=0.779 F1=0.590 polAcc=0.975
+  Retention   P=0.350 R=0.412 F1=0.378 polAcc=0.750
+  Sharing     P=0.555 R=0.877 F1=0.680 polAcc=1.000
+  Access      P=0.520 R=0.605 F1=0.559 polAcc=0.850
+  Control     P=0.468 R=0.717 F1=0.566 polAcc=0.900
+  Security    P=0.440 R=0.830 F1=0.575 polAcc=0.975
+  Regulatory  P=0.745 R=0.916 F1=0.822 polAcc=1.000
+  micro      P=0.513 R=0.799 F1=0.625
+  scores MAE=0.061 r=0.883 sameBand=0.925 gold={'High': 32, 'Moderate': 4, 'Low': 4} pred={'High': 33, 'Moderate': 5, 'Low': 2}
