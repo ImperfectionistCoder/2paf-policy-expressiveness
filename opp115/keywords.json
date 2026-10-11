@@ -1,0 +1,72 @@
+{
+ "Collection": [
+  "collect",
+  "address",
+  "cooky",
+  "interest",
+  "improve",
+  "usage",
+  "location",
+  "demographic"
+ ],
+ "Retention": [
+  "retain",
+  "90 day",
+  "resolve dispute",
+  "indefinitely",
+  "backup"
+ ],
+ "Sharing": [
+  "party",
+  "share",
+  "disclose",
+  "asset",
+  "advertiser",
+  "behalf"
+ ],
+ "Access": [
+  "correct",
+  "log account",
+  "update personal",
+  "delete personal",
+  "change personal",
+  "change delete",
+  "delete account",
+  "change update",
+  "change information",
+  "time log",
+  "review update"
+ ],
+ "Control": [
+  "opt",
+  "disable",
+  "unsubscribe",
+  "accept cooky",
+  "adjust",
+  "stop",
+  "choices",
+  "refuse",
+  "browser setting",
+  "opting"
+ ],
+ "Security": [
+  "security",
+  "secure",
+  "safeguard",
+  "ssl",
+  "prevent unauthorized",
+  "loss",
+  "encrypt"
+ ],
+ "Regulatory": [
+  "child",
+  "california",
+  "outside united",
+  "safe harbor",
+  "age 13",
+  "jurisdiction",
+  "international",
+  "parental",
+  "coppa"
+ ]
+}

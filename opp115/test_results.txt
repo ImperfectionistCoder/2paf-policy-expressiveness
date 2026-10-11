@@ -1,0 +1,10 @@
+Test set: 40 policies
+  Collection  P=0.475 R=0.779 F1=0.590 polAcc=0.975
+  Retention   P=0.350 R=0.412 F1=0.378 polAcc=0.750
+  Sharing     P=0.555 R=0.877 F1=0.680 polAcc=1.000
+  Access      P=0.520 R=0.605 F1=0.559 polAcc=0.850
+  Control     P=0.468 R=0.717 F1=0.566 polAcc=0.900
+  Security    P=0.440 R=0.830 F1=0.575 polAcc=0.975
+  Regulatory  P=0.745 R=0.916 F1=0.822 polAcc=1.000
+  micro      P=0.513 R=0.799 F1=0.625
+  scores MAE=0.061 r=0.883 sameBand=0.925 gold={'High': 32, 'Moderate': 4, 'Low': 4} pred={'High': 33, 'Moderate': 5, 'Low': 2}
