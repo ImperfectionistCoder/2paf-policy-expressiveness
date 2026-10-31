@@ -25,7 +25,7 @@ Code and data supporting the paper titled "A Privacy-by-Design Framework for Ass
   the authors' assumptions and are listed in the script.
 - `policies/GlucoseInsights_privacy_policy_reconstructed.md`
   Synthetic policy for the proof-of-concept application, with its category labels.
-  - `review/mapping_protocol.md`, `review/table6_evidence.csv`
+- `review/mapping_protocol.md`, `review/table6_evidence.csv`
   Inclusion criteria and mapping rules for the literature review, and the 13-study matrix (Table 6)
   with the supporting location in each study for every mark.
 - `compliance/`
