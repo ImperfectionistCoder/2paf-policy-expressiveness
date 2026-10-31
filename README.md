@@ -8,9 +8,6 @@ Code and data supporting the paper titled "A Privacy-by-Design Framework for Ass
   Category weights from the 13 coded studies (Table 6, Table 7), policy scores (Table 9),
   and the sensitivity analysis (Section 5.5, Table 10): equal weights, leave-one-study-out,
   bootstrap (10,000 resamples, seed 42) and threshold variation. Needs only numpy.
-- `review/codebook.md`, `review/table6_evidence.csv`
-  Inclusion criteria and coding rules for the literature review, and the 13-study matrix (Table 6)
-  with the supporting location in each study for every mark.
 - `opp115/`
   Category detection (Algorithm 1, lines 3 to 8) and its evaluation on OPP-115 (Section 5.6, Table 11).
   - `textproc.py`: cleaning, tokenization, stop-word removal and lemmatization (spaCy).
@@ -28,6 +25,18 @@ Code and data supporting the paper titled "A Privacy-by-Design Framework for Ass
   the authors' assumptions and are listed in the script.
 - `policies/GlucoseInsights_privacy_policy_reconstructed.md`
   Synthetic policy for the proof-of-concept application, with its category labels.
+  - `review/mapping_protocol.md`, `review/table6_evidence.csv`
+  Inclusion criteria and mapping rules for the literature review, and the 13-study matrix (Table 6)
+  with the supporting location in each study for every mark.
+- `compliance/`
+  GDPR transparency compliance check (Section 4.3.3, Table 8; results in Section 5.7, Table 13).
+  - `annotation_guide.md`: the 14 requirements, labeling rules and applicability rules.
+  - `policies.csv`: the policies, how they were selected (query, position, date) and their links.
+  - `labels_annotator_A.csv`, `labels_annotator_B.csv`: the two annotators' labels. Annotator A reviewed
+    draft labels prepared with the help of a language model; annotator B labeled from scratch.
+  - `ground_truth.csv`: labels after resolving the disagreements.
+  - `agreement.py`: computes the agreement (Cohen's kappa) and the result per policy (`python compliance/agreement.py`).
+- `opp115/weights_comparison.py`: weighted vs equal-weight scores on the 115 OPP-115 policies (Section 5.6).
 
 ## Data
 
@@ -49,3 +58,5 @@ To regenerate the keywords from the development set:
 
     python kwstats.py
     python select_keywords.py               # rewrites keywords.json (same result as included)
+
+
